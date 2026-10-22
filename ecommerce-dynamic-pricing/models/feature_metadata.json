@@ -1,0 +1,59 @@
+{
+    "best_model": "Gradient Boosting",
+    "results": {
+        "Linear Regression": {
+            "Test_MAE": 19.785,
+            "Test_RMSE": 29.597,
+            "Test_R2": 0.9925,
+            "Train_MAE": 19.832,
+            "Train_RMSE": 29.89,
+            "Train_R2": 0.9925
+        },
+        "Random Forest": {
+            "Test_MAE": 8.913,
+            "Test_RMSE": 18.194,
+            "Test_R2": 0.9972,
+            "Train_MAE": 3.302,
+            "Train_RMSE": 6.622,
+            "Train_R2": 0.9996
+        },
+        "Gradient Boosting": {
+            "Test_MAE": 6.56,
+            "Test_RMSE": 14.081,
+            "Test_R2": 0.9983,
+            "Train_MAE": 2.989,
+            "Train_RMSE": 4.536,
+            "Train_R2": 0.9998
+        }
+    },
+    "feature_count": 60,
+    "engineered_numericals": [
+        "cost_price",
+        "our_current_price",
+        "competitor_1_price",
+        "competitor_2_price",
+        "competitor_3_price",
+        "min_competitor_price",
+        "avg_competitor_price",
+        "max_competitor_price",
+        "competitor_dispersion",
+        "historical_sales",
+        "demand_score",
+        "inventory_level",
+        "product_rating",
+        "discount_percentage",
+        "seasonality_index",
+        "competitor_price_change",
+        "price_to_cost_ratio",
+        "competitor_price_ratio",
+        "stock_pressure_index",
+        "rating_advantage"
+    ],
+    "categorical_features": [
+        "category",
+        "brand"
+    ],
+    "test_sample_count": 1040,
+    "train_sample_count": 4160,
+    "methodology_disclaimer": "Empirical verification note: High predictive accuracy against historical/simulated pricing policies demonstrates model fidelity in capturing encoded business constraints, but does not replace real-world randomized A/B testing or bandit experiments for long-term profit optimality."
+}
